@@ -136,20 +136,20 @@ answer = "Type 2 diabetes requires lifelong insulin therapy."
 {
     "entity_level": {
         "context_entities": [
-            "Type 1"
+            "1",
+            "2",
+            "Type"
         ],
         "answer_entities": [
-            "Type 2"
+            "2"
         ],
-        "hallucination": true,
-        "details": [
-            "type 2"
-        ]
+        "hallucination": false
     },
     "intent_level": {
         "context_predicates": [
-            "produce",
-            "require"
+            "require",
+            "manage",
+            "produce"
         ],
         "answer_predicates": [
             "require"
@@ -159,9 +159,19 @@ answer = "Type 2 diabetes requires lifelong insulin therapy."
     "semantic_level": {
         "context_triples": [
             [
+                "diabetes",
+                "manage",
+                "changes"
+            ],
+            [
+                "It",
+                "require",
+                "therapy"
+            ],
+            [
                 "pancreas",
                 "produce",
-                "insulin"
+                "which"
             ]
         ],
         "answer_triples": [
@@ -172,6 +182,7 @@ answer = "Type 2 diabetes requires lifelong insulin therapy."
             ]
         ],
         "hallucination": true,
+        "type": "Semantic Triple Mismatch",
         "details": [
             [
                 "diabetes",
