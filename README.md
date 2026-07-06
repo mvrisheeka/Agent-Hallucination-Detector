@@ -61,7 +61,6 @@ If the answer changes a factual relationship from the context, it is flagged as 
 Agent-Hallucination/
 │
 ├── hallucination_detector.py
-├── hallucination_detector1.py
 ├── test_run.py
 ├── requirements.txt
 └── README.md
