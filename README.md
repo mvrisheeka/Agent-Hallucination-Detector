@@ -286,26 +286,6 @@ source hallucination_env/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-## Limitations
-
-* The project uses rule-based NLP checks.
-* It may not correctly understand all complex sentence structures.
-* Pronouns, synonyms, indirect references, and multi-step reasoning may not always be detected accurately.
-* It works best with short factual contexts and direct answers.
-* It does not currently use embeddings, transformer models, or external knowledge bases.
-
-## Future Improvements
-
-* Add sentence similarity scoring using embeddings
-* Use transformer-based Natural Language Inference models
-* Add confidence scores for hallucination detection
-* Support multiple languages
-* Add PDF and document input support
-* Build a web interface using Streamlit or Flask
-* Store hallucination reports in a database
-* Add automated unit tests
-* Add batch processing for multiple answers
-
 ## Technologies Used
 
 * Python
@@ -315,10 +295,4 @@ python -m pip install -r requirements.txt
 * Predicate Extraction
 * Subject–Predicate–Object Triple Extraction
 
-## Author
 
-Vrisheeka Mulakala
-
-## License
-
-This project is created for educational and research purposes.
